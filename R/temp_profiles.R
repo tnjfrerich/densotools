@@ -12,7 +12,7 @@ load_profile_data <- function(folder_path) {
   # read all files, clean, and store
   data <- tibble::tibble()
   for (i in 1:length(files)) {
-    profile_data <- readr::read_csv(paste0(folder_path, "\\\\", files[i]), skip = 1) %>% tibble::as_tibble()
+    profile_data <- readr::read_csv(paste0(folder_path, "\\\\", files[i]), skip = 1, show_col_types = FALSE) %>% tibble::as_tibble()
     profile_data <- profile_data %>%
       dplyr::mutate(
         `Relative Time` = seq(from = 0, to = (nrow(profile_data) - 1) / 2, by = 0.5),

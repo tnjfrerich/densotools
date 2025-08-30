@@ -1,0 +1,21 @@
+Package: densotools
+Type: Package
+Title: Tools for loading/manipulating DENSO stuff
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Jordan", "Frerichs",
+      email = "jordan.frerichs@na.denso.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: More about what it does (maybe more than one line).
+    Continuation lines should be indented.
+License: None
+Encoding: UTF-8
+LazyData: true
+Imports:
+  readr (>= 2.1.5),
+  tidyverse (>= 2.0.0),
+  dplyr (>= 1.1.4)
+RoxygenNote: 7.3.2
